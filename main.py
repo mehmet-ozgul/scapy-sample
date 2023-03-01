@@ -7,8 +7,8 @@ import logging
 logger = logging.getLogger("juicy-rtp")
 logger.setLevel(logging.DEBUG)
 
-INPUT_FILE = '/Users/mehmetozgul/temp/iw-herbalife/dtx-1/cell-clear-digits-ulaw.pcap'
-OUTPUT_FILE = '/Users/mehmetozgul/temp/iw-herbalife/dtx-1/modified-cell-clear-digits-ulaw.pcap'
+INPUT_FILE = 'the-call.pcap'
+OUTPUT_FILE = 'modified-call.pcap'
 SPORT = 35322
 DPORT = 16662
 
