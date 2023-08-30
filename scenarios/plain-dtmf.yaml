@@ -1,0 +1,36 @@
+name: plain-dtmf
+description: Audio with dtmf events
+audio_file: snl.ulaw.raw
+codec: ulaw
+ptime: 20
+duration_ms: 30000
+sample_rate: 8000
+actions:
+  100:
+    function: dtmf
+    event_packets: 8
+    end_packets: 3
+    digit: "1"
+    volume: 4
+    payload_type: 101
+  200:
+    function: dtmf
+    event_packets: 8
+    end_packets: 3
+    digit: "2"
+    volume: 5
+    payload_type: 101
+  300:
+    function: dtmf
+    event_packets: 8
+    end_packets: 3
+    digit: "3"
+    volume: 5
+    payload_type: 101
+  400:
+    function: dtmf
+    event_packets: 8
+    end_packets: 3
+    digit: "#"
+    volume: 5
+    payload_type: 101

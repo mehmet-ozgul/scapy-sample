@@ -1,0 +1,136 @@
+name: funky-dtmf
+description: Audio with dtmf events
+audio_file: snl.ulaw.raw
+codec: ulaw
+ptime: 20
+duration_ms: 30000
+sample_rate: 8000
+actions:
+  10:
+    function: byop
+    include_default_audio: false
+    timestamp_delta: -18000
+    seq_delta: 877
+    payload_type: 19
+    payload_length: 40
+    marker: true
+  50:
+    function: dtmf_manual
+    digit: "1"
+    volume: 4
+    payload_type: 101
+    interleave: true
+    timestamp_delta: -160
+    seq_delta: 0
+    duration: 388
+    end: false
+    marker: true
+  51:
+    function: dtmf_manual
+    digit: "1"
+    volume: 4
+    payload_type: 101
+    interleave: true
+    timestamp_delta: -160
+    seq_delta: 0
+    duration: 480
+    end: false
+    marker: false
+  52:
+    function: dtmf_manual
+    digit: "1"
+    volume: 4
+    payload_type: 101
+    interleave: true
+    timestamp_delta: -160
+    seq_delta: 0
+    duration: 640
+    end: false
+    marker: false
+  53:
+    function: dtmf_manual
+    digit: "1"
+    volume: 4
+    payload_type: 101
+    interleave: true
+    timestamp_delta: -160
+    seq_delta: 0
+    duration: 800
+    end: true
+    marker: false
+  54:
+    function: dtmf_manual
+    digit: "1"
+    volume: 4
+    payload_type: 101
+    interleave: true
+    timestamp_delta: -160
+    seq_delta: 0
+    duration: 800
+    end: true
+    marker: false
+  55:
+    function: dtmf_manual
+    digit: "1"
+    volume: 4
+    payload_type: 101
+    interleave: true
+    timestamp_delta: -160
+    seq_delta: 0
+    duration: 800
+    end: true
+    marker: false
+  56:
+    function: dtmf_manual
+    digit: "1"
+    volume: 4
+    payload_type: 101
+    interleave: true
+    timestamp_delta: -160
+    seq_delta: 0
+    duration: 800
+    end: true
+    marker: false
+  66:
+    function: dtmf_manual
+    digit: "*"
+    volume: 4
+    payload_type: 101
+    interleave: true
+    timestamp_delta: 44000
+    seq_delta: -233
+    duration: 1800
+    end: true
+    marker: true
+  100:
+    function: dtmf
+    event_packets: 8
+    end_packets: 3
+    digit: "1"
+    volume: 4
+    payload_type: 101
+    interleave: true
+  200:
+    function: dtmf
+    event_packets: 8
+    end_packets: 3
+    digit: "2"
+    volume: 5
+    payload_type: 101
+    interleave: true
+  300:
+    function: dtmf
+    event_packets: 8
+    end_packets: 3
+    digit: "3"
+    volume: 5
+    payload_type: 101
+    interleave: true
+  400:
+    function: dtmf
+    event_packets: 8
+    end_packets: 3
+    digit: "#"
+    volume: 5
+    payload_type: 101
+    interleave: true

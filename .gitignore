@@ -154,3 +154,5 @@ fabric.properties
 *.csv
 *.svg
 *.png
+*.pcap
+.DS_Store

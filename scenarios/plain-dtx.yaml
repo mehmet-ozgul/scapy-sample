@@ -1,0 +1,48 @@
+name: plain-dtx
+description: An audio only pcap with proper DTXs
+audio_file: snl.ulaw.raw
+codec: ulaw
+ptime: 20
+duration_ms: 30000
+sample_rate: 8000
+actions:
+  100:
+    function: dtx
+    duration_packets: 1
+    use_marker: true
+  200:
+    function: dtx
+    duration_packets: 2
+    use_marker: true
+  300:
+    function: dtx
+    duration_packets: 5
+    use_marker: true
+  320:
+    function: dtx
+    duration_packets: 1
+    use_marker: true
+  322:
+    function: dtx
+    duration_packets: 1
+    use_marker: true
+  325:
+    function: dtx
+    duration_packets: 1
+    use_marker: true
+  500:
+    function: dtx
+    duration_packets: 10
+    use_marker: true
+  600:
+    function: dtx
+    duration_packets: 20
+    use_marker: true
+  700:
+    function: dtx
+    duration_packets: 50
+    use_marker: true
+  800:
+    function: dtx
+    duration_packets: 100
+    use_marker: true
